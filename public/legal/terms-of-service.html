@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service — Arc</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        :root {
+            --bg-primary: #fafbfc;
+            --bg-secondary: #ffffff;
+            --bg-tertiary: #f0f4f8;
+            --text-primary: #0f172a;
+            --text-secondary: #475569;
+            --text-muted: #94a3b8;
+            --accent: #0891b2;
+            --accent-light: #22d3ee;
+            --accent-dark: #0e7490;
+            --border: #e2e8f0;
+            --gradient-start: #0891b2;
+            --gradient-end: #6366f1;
+            --card-shadow: 0 4px 24px rgba(15, 23, 42, 0.06);
+        }
+
+        .dark {
+            --bg-primary: #0a0f1a;
+            --bg-secondary: #111827;
+            --bg-tertiary: #1e293b;
+            --text-primary: #f1f5f9;
+            --text-secondary: #cbd5e1;
+            --text-muted: #64748b;
+            --border: #334155;
+            --card-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            padding: 1rem 2rem;
+            backdrop-filter: blur(20px);
+            background: rgba(250, 251, 252, 0.8);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .dark nav {
+            background: rgba(10, 15, 26, 0.85);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            text-decoration: none;
+        }
+
+        .logo img {
+            height: 40px;
+            width: auto;
+        }
+
+        .logo-text-img {
+            height: 24px;
+            width: auto;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+
+        .back-link:hover {
+            color: var(--accent);
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 8rem 2rem 4rem;
+        }
+
+        .page-header {
+            margin-bottom: 3rem;
+        }
+
+        .page-header h1 {
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.02em;
+        }
+
+        .page-header p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .legal-content h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin: 2.5rem 0 1rem;
+            color: var(--text-primary);
+        }
+
+        .legal-content h3 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin: 2rem 0 0.75rem;
+            color: var(--text-primary);
+        }
+
+        .legal-content p {
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+        }
+
+        .legal-content ul {
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+        }
+
+        .legal-content li {
+            margin-bottom: 0.5rem;
+        }
+
+        .legal-content a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        .legal-content a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border);
+            padding: 2rem;
+            text-align: center;
+        }
+
+        footer p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                padding: 6rem 1.5rem 3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="../index.html" class="logo">
+                <img src="../assets/img/logo.png" alt="Arc Logo" onerror="this.style.display='none'">
+                <img src="../assets/img/logo-text.png" alt="Arc" class="logo-text-img" onerror="this.style.display='none'">
+            </a>
+            <a href="../index.html" class="back-link">
+                <i class="fas fa-arrow-left"></i> Back to Home
+            </a>
+        </div>
+    </nav>
+
+    <main class="content">
+        <div class="page-header">
+            <h1>Terms of Service</h1>
+            <p>Last updated: January 2025</p>
+        </div>
+
+        <div class="legal-content">
+            <h2>1. Acceptance of Terms</h2>
+            <p>By accessing or using hub1 and related services provided by Arc ("we," "our," or "us"), you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our services.</p>
+
+            <h2>2. Description of Service</h2>
+            <p>hub1 is an open-source smart assistant platform built on ESP32 hardware. The software is provided under the MIT License and is designed to run locally on your own hardware.</p>
+
+            <h2>3. Open Source License</h2>
+            <p>hub1 software is released under the MIT License. This means you are free to:</p>
+            <ul>
+                <li>Use the software for any purpose</li>
+                <li>Modify the software to suit your needs</li>
+                <li>Distribute copies of the software</li>
+                <li>Distribute modified versions of the software</li>
+            </ul>
+            <p>The full license text is available in our <a href="https://github.com/arc-assistant/hub1/blob/main/LICENSE" target="_blank">GitHub repository</a>.</p>
+
+            <h2>4. User Responsibilities</h2>
+            <p>When using hub1, you agree to:</p>
+            <ul>
+                <li>Use the software in compliance with all applicable laws</li>
+                <li>Take responsibility for your own hardware setup and configuration</li>
+                <li>Not use the software for any illegal or unauthorized purpose</li>
+                <li>Maintain the security of your own network and devices</li>
+            </ul>
+
+            <h2>5. Hardware Requirements</h2>
+            <p>hub1 requires compatible hardware (ESP32 development board) to operate. You are responsible for:</p>
+            <ul>
+                <li>Obtaining compatible hardware</li>
+                <li>Proper installation and configuration</li>
+                <li>Electrical safety and compliance with local regulations</li>
+                <li>Any modifications made to the hardware</li>
+            </ul>
+
+            <h2>6. No Warranty</h2>
+            <p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+
+            <h2>7. Limitation of Liability</h2>
+            <p>To the maximum extent permitted by law, Arc shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits or revenues, whether incurred directly or indirectly, or any loss of data, use, goodwill, or other intangible losses resulting from:</p>
+            <ul>
+                <li>Your use or inability to use the service</li>
+                <li>Any unauthorized access to or use of your hardware</li>
+                <li>Any bugs, viruses, or other harmful code</li>
+                <li>Any errors or omissions in the software</li>
+            </ul>
+
+            <h2>8. Third-Party Integrations</h2>
+            <p>hub1 may support integrations with third-party services and devices. We are not responsible for the functionality, privacy practices, or terms of service of any third-party services you choose to integrate.</p>
+
+            <h2>9. Community Contributions</h2>
+            <p>If you contribute to the hub1 project, you agree that:</p>
+            <ul>
+                <li>Your contributions will be licensed under the MIT License</li>
+                <li>You have the right to submit your contributions</li>
+                <li>Your contributions do not infringe on any third-party rights</li>
+            </ul>
+
+            <h2>10. Modifications to Terms</h2>
+            <p>We reserve the right to modify these Terms of Service at any time. We will provide notice of significant changes by updating the "Last updated" date. Your continued use of the service after changes constitutes acceptance of the new terms.</p>
+
+            <h2>11. Termination</h2>
+            <p>As open-source software, you may use hub1 indefinitely under the MIT License. However, we reserve the right to discontinue any online services or support at any time.</p>
+
+            <h2>12. Governing Law</h2>
+            <p>These Terms shall be governed by and construed in accordance with applicable laws, without regard to conflict of law principles.</p>
+
+            <h2>13. Contact</h2>
+            <p>For questions about these Terms of Service, please open an issue on our <a href="https://github.com/arc-assistant/hub1/issues" target="_blank">GitHub repository</a>.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Arc. Open source under the <a href="https://github.com/arc-assistant/hub1/blob/main/LICENSE" target="_blank">MIT License</a>.</p>
+    </footer>
+
+    <script>
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.classList.add('dark');
+        }
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+            if (event.matches) {
+                document.documentElement.classList.add('dark');
+            } else {
+                document.documentElement.classList.remove('dark');
+            }
+        });
+    </script>
+</body>
+</html>
